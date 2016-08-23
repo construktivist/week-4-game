@@ -1,0 +1,31 @@
+body{
+	background-image: url("../../assets/images/at_bg.jpg");
+}
+
+img{
+	width: 200px;
+	height: 200px;
+}
+
+.character-container{
+	height: 200px;
+	opacity: 0.5;
+}
+
+.character{
+	background-color: #6E2C00;
+	width: 200px;
+	height: 200px;
+	margin-left: 20px;
+	float:left;
+	opacity: 1;
+}
+
+.fight-container{
+	background-color: #EDBB99;
+	width: 800px;
+	height: 250px;
+	margin: 25px;
+	padding: 25px;
+	opacity: 0.5;
+}
