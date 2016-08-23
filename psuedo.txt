@@ -1,0 +1,49 @@
+create id for finn, jake, gunter, iceking
+	--assign image to id
+create h3 that states "Pick any character to start!"
+create h3 
+create div for player character
+create div for enemy character
+create class for player
+create class for enemy
+create class active for button
+create button for Attack
+
+Ready function for document
+Create object for finn, jake, gunter, iceking
+	hp: 10
+	atk: 15
+	catk: 20
+Display var hit points on each character
+
+	Function for attack
+		*Need maths
+		Display enemy hp 
+		If enemy hp = 0 then
+				Hide image id
+				Change h3 to "You Won! Pick another character to fight!"
+		Function for counter attack
+		*Need maths
+		Display player hp  
+			if player hp  = 0 then 
+				Change h3 to "Game over"
+			
+
+	Click image id function
+		Move image id to player div
+		Add class "player" to selected image
+		Add class "enemy" to remaining images
+		Change h3 to "Pick another character to fight!"
+
+	Click image id function
+		Add image to enemy div
+		Add class active to button
+
+	Click attack button function
+		Call function for attack 
+
+
+
+
+
+	
