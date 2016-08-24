@@ -1,25 +1,43 @@
 $(document).ready(function(){
-	var finnImage = $("#finn");
-	var jakeImage = $("#jake");
-	var gunterImage = $("#gunter");
-	var icekingImage = $("#iceking");
+	var finn = $("#finn");
+	var jake = $("#jake");
+	var gunter = $("#gunter");
+	var iceking = $("#iceking");
+	var characters = [finn, jake, gunter, iceking];
+	var playerCheck = false;
+	var enemyCheck = false;
+	
+	function setPlayer(character){
+		if (playerCheck === false){
+			var playerCheck = true;
+			$(character).appendTo("#player");
+			for(var i = 0; i < characters.length; i++){
+				if(characters[i] !== character){
+					$(characters[i]).appendTo(".enemies");
+					console.log(characters[i]);
+				};
+			};
+		};
+		else if(enemyCheck === false){
+			var enemyCheck = true;
+			$(character).appendTo("#enemy");
+		};
+	};
 
-	var checkCharacter = false
-
-	$(finnImage).click(function(){
-		$(finnImage).appendTo("#player");
+	$(finn).click(function(){
+		setPlayer(finn);
 	});
 
-	$(jakeImage).click(function(){
-		$(jakeImage).appendTo("#player");
+	$(jake).click(function(){
+		setPlayer(jake);
+	}); 
+
+	$(gunter).click(function(){
+		setPlayer(gunter);
 	});
 
-	$(gunterImage).click(function(){
-		$(gunterImage).appendTo("#player");
-	});
-
-	$(icekingImage).click(function(){
-		$(icekingImage).appendTo("#player");
+	$(iceking).click(function(){
+		setPlayer(iceking);
 	});	
 
 });

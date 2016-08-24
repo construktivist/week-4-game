@@ -5,14 +5,16 @@ body{
 img{
 	width: 200px;
 	height: 200px;
+	opacity: 1;
 }
 
 .character-container{
 	height: 200px;
+	width: 900px;
 	opacity: 0.5;
 }
 
-.character{
+.character, #player, #enemy{
 	background-color: #6E2C00;
 	width: 200px;
 	height: 200px;
@@ -21,18 +23,9 @@ img{
 	opacity: 1;
 }
 
-#player{
-	background-color: #6E2C00;
-	width: 200px;
-	height: 200px;
-	margin-left: 20px;
-	float:left;
-	opacity: 1;
-}
-
-.fight-container{
+.fight-container, .enemies{
 	background-color: #EDBB99;
-	width: 800px;
+	width: 900px;
 	height: 250px;
 	margin: 25px;
 	padding: 25px;
