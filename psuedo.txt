@@ -16,6 +16,7 @@ Create object for finn, jake, gunter, iceking
 	catk: 20
 Display var hit points on each character
 
+
 	Function for attack
 		*Need maths
 		Display enemy hp 

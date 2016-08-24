@@ -21,6 +21,15 @@ img{
 	opacity: 1;
 }
 
+#player{
+	background-color: #6E2C00;
+	width: 200px;
+	height: 200px;
+	margin-left: 20px;
+	float:left;
+	opacity: 1;
+}
+
 .fight-container{
 	background-color: #EDBB99;
 	width: 800px;
