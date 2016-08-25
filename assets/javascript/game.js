@@ -9,20 +9,33 @@ $(document).ready(function(){
 	
 	function setPlayer(character){
 		if (playerCheck === false){
-			var playerCheck = true;
+
+			playerCheck = true;
+
 			$(character).appendTo("#player");
+			
 			for(var i = 0; i < characters.length; i++){
+				
 				if(characters[i] !== character){
+					
 					$(characters[i]).appendTo(".enemies");
-					console.log(characters[i]);
+						console.log(characters[i]);
 				};
-			};
-		};
-		else if(enemyCheck === false){
-			var enemyCheck = true;
+			};	
+		}
+		else if(playerCheck === true && enemyCheck === false){
+
+			enemyCheck = true;
+
 			$(character).appendTo("#enemy");
-		};
+		}
+		else{
+			alert("You must defeat your chosen enemy!");
+		}
+
 	};
+
+	
 
 	$(finn).click(function(){
 		setPlayer(finn);
@@ -42,4 +55,3 @@ $(document).ready(function(){
 
 });
 
-//create array and loop.
