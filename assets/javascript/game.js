@@ -6,9 +6,10 @@ $(document).ready(function(){
 	var $button = $(".button");
 	var characters = [$finn, $jake, $gunter, $iceking];
 	var playerCheck = false;
+	var playerStatCheck = false;
 	var enemyCheck = false;
-	var player;
-	var enemy;
+	player;
+	enemy;
 	
 	var playerStats = {
 		hp: 0,
@@ -20,18 +21,6 @@ $(document).ready(function(){
 		hp: 0,
 		attack: 0,
 		counterAttack: 0
-	};
-
-	var finn = {
-		hp: 20,
-		attack: 5,
-		counterAttack: 2
-	};
-
-	var jake = {
-		hp: 20,
-		attack: 1,
-		counterAttack: 1
 	};
 	
 	function setPlayer(character){
@@ -68,52 +57,88 @@ $(document).ready(function(){
 	};
 	
 	function setPlayerStats(character){
-		if (player === character){
-			player.hp = 5;
-			player.attack = 4;
-			player.counterAttack = 5;
+		if(playerStatCheck === false){
+			playerStatCheck = true;
+			if ($finn === character){
+				player.hp = 20;
+				player.attack = 5;
+				player.counterAttack = 2;
+			}
+			else if ($jake === character){
+				player.hp = 15;
+				player.attack = 4;
+				player.counterAttack = 3;
+			}
+			else if($gunter === character){
+				player.hp = 10;
+				player.attack = 3;
+				player.counterAttack = 4;
+			}
+			else if($iceking === character){
+				player.hp = 5;
+				player.attack = 2;
+				player.counterAttack = 5;
+			}
+			else{
+				console.log("Not player");
+			}
+			console.log(player);
+		};
+	};
+
+	function setEnemyStats(character){
+		if ($finn === character){
+			enemy.hp = 20;
+			enemy.attack = 5;
+			enemy.counterAttack = 2;
 		}
-		else if{
-			player.hp = 4;
-			player.attack = 3;
-			player.counterAttack = 5;
+		else if ($jake === character){
+			enemy.hp = 15;
+			enemy.attack = 4;
+			enemy.counterAttack = 3;
 		}
-		else if{
-			player.hp = 20;
-			player.attack = 2;
-			player.counterAttack = 5;
+		else if($gunter === character){
+			enemy.hp = 10;
+			enemy.attack = 3;
+			enemy.counterAttack = 4;
 		}
-		else if{
-			player.hp = 20;
-			player.attack = 1;
-			player.counterAttack = 5;
+		else if($iceking === character){
+			enemy.hp = 5;
+			enemy.attack = 2;
+			enemy.counterAttack = 5;
 		}
-		console.log(player);
-	}
+		else{
+			console.log("Not enemy");
+		}		
+		console.log(enemy);
+	};
 
 	$($finn).click(function(){
 		setPlayer($finn);
-		setPlayerStats($finn);
-
+		setPlayerStats($finn);	
+		setEnemyStats($finn);
 	});
 
 	$($jake).click(function(){
 		setPlayer($jake);
 		setPlayerStats($jake);
-
+		setEnemyStats($jake);
 	}); 
 
 	$($gunter).click(function(){
 		setPlayer($gunter);
+		setPlayerStats($gunter);	
+		setEnemyStats($gunter);
 	});
 
 	$($iceking).click(function(){
 		setPlayer($iceking);
+		setPlayerStats($iceking);	
+		setEnemyStats($iceking);
 	});	
 
 	$($button).click(function(){
 		console.log("Attack!");
-		combat(finn, jake);
 	});
 
 });
