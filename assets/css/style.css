@@ -23,10 +23,6 @@ img{
 	float: left;
 }
 
-#enemy{
-	float: right;
-}
-
 .fight-container, .enemies{
 	background-color: #EDBB99;
 	width: 900px;
@@ -48,4 +44,16 @@ img{
 	height: 50px;
 	position: relative;
 	top: 150px;
+}
+
+#enemy{
+	float: right;
+}
+
+#player-hp, #enemy-hp{
+	background-color: #D13114;
+	width: 200px;
+	height: 25px;
+	position: relative;
+	top: 170px;
 }

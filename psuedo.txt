@@ -43,7 +43,19 @@ Display var hit points on each character
 	Click attack button function
 		Call function for attack 
 
+Create 2 global variables:
+	var player = {
+	hp:1,
+	attack:1,
+	counterAttack:1};
 
+	var enemy;
+
+	then in setPlayer(), after you move the image:
+player.hp = $(character).hp;
+player.attack = $(character).attack;
+etc.
+not  sure how $(character) is setup
 
 
 
