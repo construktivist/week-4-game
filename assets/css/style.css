@@ -5,11 +5,13 @@ body{
 img{
 	width: 200px;
 	height: 200px;
+	opacity: 1;
 }
 
 .character-container{
 	height: 200px;
 	width: 900px;
+	opacity: 0.5;
 }
 
 .character, #player, #enemy{
@@ -17,11 +19,8 @@ img{
 	width: 200px;
 	height: 200px;
 	margin-left: 20px;
+	opacity: 1;
 	float: left;
-}
-
-#enemy{
-	float: right;
 }
 
 .fight-container, .enemies{
@@ -30,6 +29,7 @@ img{
 	height: 250px;
 	margin: 25px;
 	padding: 25px;
+	opacity: 0.5;
 }
 
 .button {
@@ -44,4 +44,16 @@ img{
 	height: 50px;
 	position: relative;
 	top: 150px;
+}
+
+#enemy{
+	float: right;
+}
+
+#player-hp, #enemy-hp{
+	background-color: #D13114;
+	width: 200px;
+	height: 25px;
+	position: relative;
+	top: 170px;
 }
