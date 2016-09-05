@@ -3,52 +3,76 @@
 <head>
 	<title>Adventure Time Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<!-- Header -->
-	<h1> The Adventure Time RPG Game!"</h1>
-	<!-- Character Area-->
-	<div class="character-container">
-		<h3>Select a character to start!</h3>
-		<div id="finn" class="character">
-			<img alt="finn" src="assets/images/finn.png">
-			<p></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<!-- Header -->
+				<h1> The Adventure Time RPG Game!"</h1>
+			</div>
 		</div>
-		<div id="jake" class="character">
-			<img alt="jake" src="assets/images/jake.jpg">
-			<p></p>
+		<!-- Character Area-->
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Select a character to start!</h3>
+			</div>
 		</div>
-		<div id="gunter" class="character">
-			<img alt="gunter" src="assets/images/gunter.jpg">
-			<p></p>
+		<div class= "row character-container">	
+				<div id="finn" class="col-md-3 character">
+					<img alt="finn" src="assets/images/finn.png">
+					<p></p>
+				</div>
+				<div id="jake" class="col-md-3 character">
+					<img alt="jake" src="assets/images/jake.jpg">
+					<p></p>
+				</div>
+				<div id="gunter" class="col-md-3 character">
+					<img alt="gunter" src="assets/images/gunter.jpg">
+					<p></p>
+				</div>
+				<div id="iceking" class="col-md-3 character">
+					<img alt="ice king" src="assets/images/iceking.png">
+					<p></p>
+				</div>
 		</div>
-		<div id="iceking" class="character">
-			<img alt="ice king" src="assets/images/iceking.png">
-			<p></p>
+		<div class="row">
+			<div class="col-md-12">
+				<h2> The Arena of the Fight King!</h2>
+			</div>
 		</div>
+		<div class="row fight-container">
+			<div class="row">
+				<!-- Player character area -->
+				<div class="col-md-4">
+					<div id="player">
+						<div id="player-hp"></div>
+					</div>
+				</div>
+				<!-- Button area -->
+				<div class="col-md-4 button"></div>
+				<!-- Enemy character area -->
+				<div class="col-md-4">
+					<div id="enemy">
+						<div id="enemy-hp"></div>
+					</div>	
+				</div>
+			</div>	
+			<!-- Comabt log area -->
+			<div class="row">
+				<div class="col-md-12 combat-log">
+					<p></p>
+				</div>
+			</div>	
+		</div>
+		<!-- Enemy area -->
+		<div class="row enemies">
+			<h2>Your sworn enemies!</h2>
+		</div>
+		<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		<script src="assets/javascript/game.js"></script>
 	</div>
-	<div class="fight-container">
-		<h2> The Arena of the Fight King!</h2>
-		<!-- Player character area -->
-		<div id="player">
-			<div id="player-hp"></div>
-		</div>
-		<!-- Enemy character area -->
-		<div id="enemy">
-			<div id="enemy-hp"></div>
-		</div>
-		<!-- Button area -->
-		<div class="button"></div>
-		<div class="combat-log">
-			<p></p>
-		</div>
-	</div>
-	<!-- Enemy area -->
-	<div class="enemies">
-		<h2>Your sworn enemies!</h2>
-	</div>
-	<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-	<script src="assets/javascript/game.js"></script>
 </body>
 </html>

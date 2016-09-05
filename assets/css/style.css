@@ -11,49 +11,33 @@ img{
 .character-container{
 	height: 200px;
 	width: 900px;
-	opacity: 0.5;
 }
 
 .character, #player, #enemy{
-	background-color: #6E2C00;
 	width: 200px;
 	height: 200px;
-	margin-left: 20px;
-	opacity: 1;
-	float: left;
 }
 
 .fight-container, .enemies{
 	background-color: #EDBB99;
 	width: 900px;
 	height: 250px;
-	margin: 25px;
-	padding: 25px;
-	opacity: 0.5;
 }
 
 .button {
 	background-color: #0BB4DE;
 	width:100px;
 	height: 50px;
-	margin: auto;
 }
 
 .combat-log{
 	background-color: #D13114;
+	width:900px;
 	height: 50px;
-	position: relative;
-	top: 150px;
-}
-
-#enemy{
-	float: right;
 }
 
 #player-hp, #enemy-hp{
 	background-color: #D13114;
 	width: 200px;
 	height: 25px;
-	position: relative;
-	top: 170px;
 }

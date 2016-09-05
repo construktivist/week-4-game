@@ -11,8 +11,8 @@ $(document).ready(function(){
 		var playerStatCheck = false;
 		var enemyCheck = false;
 		var enemyStatCheck = false;
-		player;
-		enemy;
+		player = null;
+		enemy = null;
 		
 		function setPlayer(character){
 			if (playerCheck === false){
